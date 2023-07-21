@@ -1,0 +1,88 @@
+body {
+    background: rgb(64, 18, 139);
+    background: linear-gradient(90deg, rgba(64, 18, 139, 1) 35%, rgba(101, 40, 247, 1) 100%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.todo-title {
+    margin-top: 4%;
+    font-size: 800;
+    color: white;
+}
+
+.todo-wrapper {
+    display: grid;
+    margin: 5% auto;
+    padding: 2% 0;
+    background-color: #ECF2FF;
+    grid-template-columns: 1fr;
+    max-width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.todo-form {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 4% 10%;
+}
+
+.todo-form input {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 10px;
+    padding: 2%;
+    height: 40px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.todo-form button {
+    padding: 2%;
+    height: 40px;
+    width: 90px;
+    background: rgb(64, 18, 139);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    border-radius: 10px;
+}
+
+.todo-form button:hover {
+    background: rgb(98, 30, 207);
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    gap: 5%;
+    background-color: #F0DE36;
+    margin: 1% 10%;
+    border-radius: 10px;
+
+}
+
+.options {
+    display: flex;
+    gap: 40%;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:720px) {
+    .todo-wrapper {
+        max-width: 80%;
+        padding: 5%;
+    }
+
+    .todo-form {
+        margin: 4% 5%;
+    }
+    .todo {
+        padding: 0 10%;
+        margin: 1% 5%;
+    }
+}
